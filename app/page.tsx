@@ -1,5 +1,6 @@
 "use client"
 
+import type { ReactNode } from "react";
 import { useState } from "react";
 import {
   ArrowDownRight,
@@ -106,7 +107,13 @@ const faqs = [
   },
 ];
 
-function SectionLabel({ children, light = false }) {
+function SectionLabel({
+  children,
+  light = false,
+}: {
+  children: ReactNode;
+  light?: boolean;
+}) {
   return (
     <div
       className={`mb-5 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] ${light ? "text-yellow-300" : "text-yellow-700"
@@ -118,7 +125,17 @@ function SectionLabel({ children, light = false }) {
   );
 }
 
-function Button({ children, href, secondary = false, className = "" }) {
+function Button({
+  children,
+  href,
+  secondary = false,
+  className = "",
+}: {
+  children: ReactNode;
+  href: string;
+  secondary?: boolean;
+  className?: string;
+}) {
   return (
     <a
       href={href}
@@ -144,7 +161,7 @@ export default function MancalMotores() {
     motor: "",
   });
 
-  const handleQuote = (e) => {
+  const handleQuote = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const details = [
