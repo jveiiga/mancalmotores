@@ -704,7 +704,7 @@ export default function MancalMotores() {
 
           <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
             <p>
-              © {new Date().getFullYear()} Mancal Motores. Todos os direitos reservados.
+              © 2026 Mancal Motores. Todos os direitos reservados.
             </p>
             <a href="/privacy-policy" className="hover:text-white">
               Política de Privacidade
