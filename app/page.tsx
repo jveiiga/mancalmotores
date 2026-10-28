@@ -39,19 +39,19 @@ const products = [
   {
     name: "Bloco de motor",
     description: "Consulte a disponibilidade para seu veículo.",
-    tag: "CONSULTA DE APLICAÇÃO",
+    tag: "NOVO, USADO E RETIFICADO",
     image: "/engine-1.jpg",
   },
   {
     name: "Bloco parcial",
     description: "Consulte versões e configurações disponíveis.",
-    tag: "SOB CONSULTA",
+    tag: "NOVO, USADO E RETIFICADO",
     image: "/engine-2.png",
   },
   {
     name: "Peças para motor",
     description: "Informe o modelo e a motorização desejada.",
-    tag: "ATENDIMENTO ESPECIALIZADO",
+    tag: "NOVAS, USADAS E RETIFICADAS",
     image: "/engines.webp",
   },
 ];
@@ -192,10 +192,10 @@ export default function MancalMotores() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-8">
           <a href="#inicio" className="flex items-center gap-3">
             <Image
-              src="/logo.png"
+              src="/logo-5.png"
               alt="Logo da Mancal Motores"
-              width={200}
-              height={44}
+              width={300}
+              height={60}
               className="object-cover"
             />
             {/* <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#181818] text-red-400">
@@ -282,14 +282,12 @@ export default function MancalMotores() {
             <SectionLabel light>Especialistas em motores</SectionLabel>
 
             <h1 className="max-w-3xl text-4xl font-black leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
-              O bloco de motor certo para{" "}
-              <span className="text-red-500">seguir em frente.</span>
+              O bloco certo para o seu motor,{" "}
+              <span className="text-red-500">com opções para cada necessidade.</span>
             </h1>
 
             <p className="mt-7 max-w-xl text-base leading-7 text-neutral-300 sm:text-lg">
-              Encontre a peça compatível com seu veículo. Consulte
-              disponibilidade, condições comerciais e opções de entrega
-              diretamente com nossa equipe.
+              Trabalhamos com peças automotivas novas, usadas e recondicionadas. Consulte disponibilidade, procedência e compatibilidade com seu veículo.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -478,7 +476,7 @@ export default function MancalMotores() {
                 A peça que seu projeto precisa.
               </h2>
               <p className="mt-4 max-w-xl leading-7 text-neutral-600">
-                Consulte aplicações, versões e disponibilidade com nossa equipe.
+                Consulte condições, versões e disponibilidade com nossa equipe.
               </p>
             </div>
             <a
@@ -649,7 +647,7 @@ export default function MancalMotores() {
                 <Image
                   src="/logo.png"
                   alt="Logo da Mancal Motores"
-                  width={300}
+                  width={350}
                   height={40}
                   className="object-cover"
                 />
